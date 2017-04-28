@@ -1,2 +1,2 @@
 -- Test
-main = putStrLn "Hello World"
+main = concatStuff x [ x:c | c <- ["a..z"] ]

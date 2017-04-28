@@ -1,15 +1,37 @@
 {
     "version": "0.1.0",
-    "command": "cmd",
-    "isShellCommand": true,
-    "args": ["/C"],
+    "command": "powershell",
     "showOutput": "always",
-    "suppressTaskName": false,
+    "suppressTaskName": false,    
     "tasks": [
         {
             "taskName": "ghc",
-            "args": ["main.hs"],
-            "isBuildCommand": true
+            "showOutput": "always",
+            "isBuildCommand": true,
+            "args": [
+                "main.hs"
+            ]
         }   
     ]
 }
+
+// {
+//     "version": "0.1.0",
+//     "command": "powershell",
+//     "args": [   
+//         "-ExecutionPolicy",
+//         "Unrestricted",
+//         "-NoProfile",
+//         "-File",
+//         "${cwd}/source/deployment/build.ps1"       
+//     ],
+//     "taskSelector": "-task ",
+//     "showOutput": "always",
+//     "tasks": [
+//         {
+//             "taskName": "build",
+//             "showOutput": "always",
+//             "isBuildCommand": true
+//         }
+//     ]
+// }
