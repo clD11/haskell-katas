@@ -1,3 +1,3 @@
 # Haskell Katas
 
-* Fizzbuzz - http://agilekatas.co.uk/katas/fizzbuzz-kata
+* FizzBuzz - http://codingdojo.org/kata/FizzBuzz/
