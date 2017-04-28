@@ -11,6 +11,13 @@
             "args": [
                 "main.hs"
             ]
+        },
+        {            
+            "showOutput": "always",
+            "isBuildCommand": true,
+            "args": [
+                ".\\main.exe"
+            ]
         }   
     ]
 }
